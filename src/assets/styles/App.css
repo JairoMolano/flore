@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+#root {
+  @apply bg-white text-gray-600;
+}
+
+.text-custom {
+    @apply font-semibold hover:text-[#FFB6C1];
+}
