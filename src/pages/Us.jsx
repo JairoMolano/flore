@@ -1,6 +1,9 @@
 import React from 'react';
 
-import headerImg from '../assets/img/us/header.jpg';
+import usImg from '../assets/img/us/us.png';
+import misionImg from '../assets/img/us/mision.jpeg';
+import visionImg from '../assets/img/us/vision.jpeg';
+import valoresImg from '../assets/img/us/valores.jpeg';
 import SectionWithImage from '../components/us/sectionWithImage';
 
 const sections = [
@@ -10,6 +13,7 @@ const sections = [
     description:
       "Brindar una experiencia gastronómica única a través de brunchs creativos, frescos y personalizados, en un ambiente acogedor tanto en el local como a domicilio.",
     imgFirst: false,
+    imgSrc: misionImg, 
   },
   {
     id: 2,
@@ -17,6 +21,7 @@ const sections = [
     description:
       "Ser el brunch de referencia en la región, expandiendo nuestro concepto de sabor, cercanía y bienestar a más rincones del país a través de innovación, calidad y servicio.",
     imgFirst: true,
+    imgSrc: visionImg, 
   },
   {
     id: 3,
@@ -31,6 +36,7 @@ const sections = [
       </>
     ),
     imgFirst: false,
+    imgSrc: valoresImg, 
   },
 ];
 
@@ -38,7 +44,7 @@ const Us = () => {
   return (
     <div>
       <header className="flex flex-col items-center">
-        <img className="w-full h-120 object-cover" src={headerImg} alt="Header" />
+        <img className="w-full h-120 object-cover" src={usImg} alt="Header" />
         <div className="w-4/5 text-center mt-12  max-w-4xl">
           <h1 className="text-5xl font-bold mb-6">Nuestra historia</h1>
           <h3 className="text-lg font-medium text-gray-700 leading-relaxed">
@@ -59,7 +65,7 @@ const Us = () => {
             key={section.id}
             title={section.title}
             description={section.description}
-            imgSrc={headerImg}
+            imgSrc={section.imgSrc} 
             imgFirst={section.imgFirst}
           />
         ))}

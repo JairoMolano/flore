@@ -1,17 +1,18 @@
-import React from 'react'
-import headerImg from '../assets/img/us/header.jpg';
+import React from 'react';
+import deliveryImg from '../assets/img/us/delivery.png'; 
 import FindUs from '../components/common/FindUs';
+import domiImg from '../assets/img/us/domi.png'; 
 
 const Delivery = () => {
   return (
     <div>
       <header className="flex flex-col items-center">
-        <img className="w-full h-120 object-cover" src={headerImg} alt="Header" />
+        <img className="w-full h-120 object-cover" src={deliveryImg} alt="Delivery" /> 
         <div className="w-4/5 mt-12 max-w-4xl flex flex-col md:flex-row items-center">
           <div className="md:w-1/2">
             <img
               className="w-full h-auto object-cover"
-              src={headerImg}
+              src={domiImg} 
               alt="Delivery"
             />
           </div>
@@ -36,4 +37,4 @@ const Delivery = () => {
   );
 };
 
-export default Delivery
+export default Delivery;

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import React from 'react'
 import './assets/styles/App.css'
+import './assets/styles/EmblaCarousel.css'
 
 import Home from './pages/Home'
 import Us from './pages/Us'
@@ -11,6 +12,7 @@ import Delivery from './pages/Delivery'
 
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
+
 
 function App() {
 

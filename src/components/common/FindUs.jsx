@@ -4,7 +4,7 @@ import mapImg from '../../assets/img/common/find_us/map.jpg'
 const FindUs = () => {
   return (
     <div className="flex flex-col items-center py-8">
-      <h2 className="text-4xl font-extrabold mb-4">Encuentranos en neiva</h2>
+      <h2 className="text-4xl font-extrabold mb-4">Encuentranos en Neiva</h2>
       <p className="text-center max-w-4xl mb-10 text-lg text-gray-600">
         Te invitamos a conocer Floré el destino predilecto para los amantes del brunch en Neiva. 
         Nuestras puertas están abiertas para recibirte y crear juntos momentos inolvidables mientras 

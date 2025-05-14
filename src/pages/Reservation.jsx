@@ -1,5 +1,5 @@
 import React from 'react';
-import headerImg from '../assets/img/us/header.jpg';
+import reservationImg from '../assets/img/us/Reservation.png'; // Cambio aquí
 
 const Reservation = () => {
   return (
@@ -7,7 +7,7 @@ const Reservation = () => {
       {/* Imagen izquierda */}
       <div className="w-1/2 h-screen">
         <img
-          src={headerImg}
+          src={reservationImg} // Cambio aquí
           alt="Imagen reserva"
           className="object-cover w-full h-full"
         />
