@@ -1,7 +1,6 @@
-import ingredientsImg from '../assets/img/home/about_us/ingredients.jpg';
-import scheduleImg from '../assets/img/home/about_us/schedule.jpg';
-import combinationsImg from '../assets/img/home/about_us/combinations.jpg';
-
+import ingredientsImg from '../assets/img/home/about-us/ingredients.jpg';
+import scheduleImg from '../assets/img/home/about-us/schedule.jpg';
+import combinationsImg from '../assets/img/home/about-us/combinations.jpg';
 
 const aboutUsCards = [
     {

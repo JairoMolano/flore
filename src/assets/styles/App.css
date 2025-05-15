@@ -6,5 +6,5 @@
 }
 
 .text-custom {
-    @apply font-semibold hover:text-[#FFB6C1];
+    @apply font-semibold hover:text-[#9C7696];
 }

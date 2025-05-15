@@ -1,17 +1,23 @@
-import React from 'react'
 import Carousel from '../components/home/Carousel'
-import AboutUs from '../components/home/AboutUs'
+import ChooseUs from '../components/home/ChooseUs'
+import Outstanding from '../components/home/Outstanding'
 import FindUs from '../components/common/FindUs'
-import EmblaCarousel from '../components/common/EmblaCarousel'
-
+import SpawnAnimation from '../components/common/SpawnAnimation';
 
 const Home = () => {
+
   return (
     <>
       <Carousel />
-      <AboutUs />
-      <EmblaCarousel/>
-      <FindUs />
+      <SpawnAnimation>
+        <ChooseUs />
+      </SpawnAnimation>
+      <SpawnAnimation>
+        <Outstanding />
+      </SpawnAnimation>
+      <SpawnAnimation>
+        <FindUs />
+      </SpawnAnimation>
     </>
   )
 }

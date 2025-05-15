@@ -1,6 +1,6 @@
-import freshStartImages from "../data/Images/freshStart";
-import brunchImages from "../data/Images/brunchAndBreakfast";
-import iceDrinksImages from "../data/Images/iceDrinks";
+import freshStartImages from "./Images/freshStart";
+import brunchImages from "./Images/brunchAndBreakfast";
+import iceDrinksImages from "./Images/iceDrinks";
 
 const menuData = [
   {

@@ -1,5 +1,4 @@
-import React from 'react';
-import reservationImg from '../assets/img/us/Reservation.png'; // Cambio aquí
+import reservationImg from '../assets/img/reservation/reservation.png';
 
 const Reservation = () => {
   return (

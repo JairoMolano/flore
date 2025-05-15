@@ -1,11 +1,11 @@
-import React from 'react';
-import logo from '../../assets/img/common/logo.png';
+import logoImg from '../../assets/img/common/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal bg-purple-100 p-15">
-      <aside className="flex justify-center sm:justify-start mb-6 sm:mb-0">
-        <img src={logo} alt="Logo" className="w-45 h-45"/>
+    <footer className="footer footer-horizontal bg-purple-100 p-15 mt-25">
+      <div className='max-w-5xl mx-auto flex flex-row justify-between items-center w-full'>
+        <aside className="flex justify-center sm:justify-start mb-6 sm:mb-0">
+        <img src={logoImg} alt="Logo" className="w-45 h-45"/>
       </aside>
       <nav>
         <h6 className="footer-title text-lg font-semibold mb-2">Encuéntranos</h6>
@@ -61,6 +61,7 @@ const Footer = () => {
           </a>
         </div>
       </nav>
+      </div>
     </footer>
   );
 };

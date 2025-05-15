@@ -1,5 +1,3 @@
-import React from "react";
-
 const MenuCard = ({ title, description, price, image, label }) => {
   return (
     <div className="card lg:card-side bg-white shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">

@@ -1,13 +1,15 @@
-import React from "react";
-import MenuSection from "../components/common/MenuSection";
-import menuData from "../data/menuData";
+import MenuSection from "../components/menu/MenuSection";
+import menuData from "../data/menu";
+import SpawnAnimation from "../components/common/SpawnAnimation";
 
 const Menu = () => {
   return (
     <div>
       {menuData.map((section, index) => (
         <section key={index}>
-          <MenuSection title={section.title} items={section.items} />
+          <SpawnAnimation>
+            <MenuSection title={section.title} items={section.items} />
+          </SpawnAnimation>
         </section>
       ))}
     </div>
@@ -15,5 +17,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
