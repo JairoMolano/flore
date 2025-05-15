@@ -12,6 +12,8 @@ Este proyecto está construido con **React** y está diseñado para ofrecer una 
 
 ## 📦 Instalación
 
-**¡IMPORTANTE!:**Instala *dependencias* y *paquetes* necesarios:
+**¡IMPORTANTE!:** Instala *dependencias* y *paquetes* necesarios:
+
 npm i
+
 npm install embla-carousel-react embla-carousel-auto-scroll framer-motion i18next react-i18next i18next-http-backend i18next-browser-languagedetector
