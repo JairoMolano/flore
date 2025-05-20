@@ -8,3 +8,34 @@
 .text-custom {
     @apply font-semibold hover:text-[#9C7696];
 }
+
+.tittle {
+    @apply text-4xl font-extrabold text-gray-800;
+}
+
+.description {
+    @apply text-lg font-medium text-gray-700 leading-relaxed;
+}
+
+.hover-animate {
+    @apply transform transition duration-300 hover:scale-105 hover:shadow-xl;
+}
+
+.hover-button-animation {
+    @apply transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-[#9C7696] hover:text-white;
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1.2) translate(-2%, -2%);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+.kenburns {
+  animation: kenburns 7s ease-in-out forwards;
+}
+
+

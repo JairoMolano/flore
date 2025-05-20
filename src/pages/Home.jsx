@@ -3,6 +3,7 @@ import ChooseUs from '../components/home/ChooseUs'
 import Outstanding from '../components/home/Outstanding'
 import FindUs from '../components/common/FindUs'
 import SpawnAnimation from '../components/common/SpawnAnimation';
+import map from '../assets/img/common/find-us/map.jpg'
 
 const Home = () => {
 

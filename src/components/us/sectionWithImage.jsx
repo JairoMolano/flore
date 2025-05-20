@@ -1,7 +1,7 @@
 const SectionWithImage = ({ title, description, imgSrc, imgFirst = false }) => {
   return (
     <div
-      className={`w-full flex flex-row items-center gap-10 max-w-5xl mt-25 ${
+      className={`flex flex-row items-center gap-10 max-w-5xl mx-auto mt-25 ${
         imgFirst ? 'flex-row-reverse' : ''
       }`}
     >
@@ -15,9 +15,9 @@ const SectionWithImage = ({ title, description, imgSrc, imgFirst = false }) => {
         </div>
       </div>
 
-      <div className="w-1/2 text-center text-left">
-        <h2 className="text-5xl font-extrabold mb-6 text-gray-800">{title}</h2>
-        <p className="text-lg font-medium text-gray-700 leading-relaxed">{description}</p>
+      <div className="w-1/2 text-left">
+        <h2 className="tittle mb-6">{title}</h2>
+        <p className="description">{description}</p>
       </div>
     </div>
   )

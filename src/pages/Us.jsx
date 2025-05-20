@@ -17,19 +17,16 @@ const Us = () => {
       <SpawnAnimation>
         <OurHistory />
       </SpawnAnimation>
-
-      <div className="mt-16 space-y-20 max-w-5xl text-center mx-auto">
-        {aboutUsData.map((section) => (
-          <SpawnAnimation key={section.id}>
-            <SectionWithImage
-              title={section.title}
-              description={section.description}
-              imgSrc={section.imgSrc}
-              imgFirst={section.imgFirst}
-            />
-          </SpawnAnimation>
+      {aboutUsData.map((section) => (
+        <SpawnAnimation key={section.id}>
+          <SectionWithImage
+            title={section.title}
+            description={section.description}
+            imgSrc={section.imgSrc}
+            imgFirst={section.imgFirst}
+          />
+        </SpawnAnimation>
         ))}
-      </div>
     </div>
   );
 };

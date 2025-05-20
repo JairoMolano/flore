@@ -5,7 +5,7 @@ const ChooseUs = () => {
   return (
     <>
     <div className="flex flex-col items-center mt-25">
-      <h1 className="text-4xl font-extrabold mb-15 text-gray-600 text-center">
+      <h1 className="tittle mb-15">
         ¿Por qué elegirnos?
       </h1>
       <div className="flex flex-row flex-wrap gap-20 justify-center max-w-5xl">
