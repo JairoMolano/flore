@@ -3,7 +3,7 @@ import MenuCard from "./MenuCard";
 const MenuSection = ({ title, items }) => {
     return (
       <div className="max-w-5xl mx-auto mt-25">
-        <div className="w-24 h-1 bg-pink-300 mb-6 rounded-full" />
+        <div className="w-full h-1 bg-[#9C7696] mb-6 rounded-full" />
         <h2 className="tittle mb-12">
           {title}
         </h2>

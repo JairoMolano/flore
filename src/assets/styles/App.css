@@ -5,8 +5,8 @@
   @apply bg-white text-gray-600;
 }
 
-.text-custom {
-    @apply font-semibold hover:text-[#9C7696];
+.navbar-text {
+    @apply text-lg font-medium text-gray-700 leading-relaxed hover:text-[#9C7696];
 }
 
 .tittle {
@@ -22,7 +22,7 @@
 }
 
 .hover-button-animation {
-    @apply transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-[#9C7696] hover:text-white;
+    @apply transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-purple-500 hover:text-white;
 }
 
 @keyframes kenburns {

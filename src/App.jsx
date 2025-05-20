@@ -20,10 +20,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/nosotros" element={<Us />} />
+        <Route path="/us" element={<Us />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/reservas" element={<Reservation />} />
-        <Route path="/domicilios" element={<Delivery />} />
+        <Route path="/reservation" element={<Reservation />} />
+        <Route path="/delivery" element={<Delivery />} />
       </Routes>
       <Footer />
     </BrowserRouter>

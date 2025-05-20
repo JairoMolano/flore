@@ -3,7 +3,7 @@ import SpawnAnimation from "../components/common/SpawnAnimation";
 import useMenuData from "../hooks/useMenuData";
 
 const Menu = () => {
-  const menuData = useMenuData();
+  const { menuData } = useMenuData();
 
   return (
     <div>

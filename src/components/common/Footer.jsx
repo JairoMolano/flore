@@ -1,36 +1,48 @@
+import { useTranslation } from 'react-i18next';
 import logoImg from '../../assets/img/common/logo.png';
 
 const Footer = () => {
+  const { t } = useTranslation('common');
+
   return (
     <footer className="footer footer-horizontal bg-purple-100 p-15 mt-25">
-      <div className='max-w-5xl mx-auto flex flex-row justify-between items-center w-full'>
+      <div className="max-w-5xl mx-auto flex flex-row justify-between items-center w-full flex-wrap gap-10">
         <aside className="flex justify-center sm:justify-start mb-6 sm:mb-0">
-        <img src={logoImg} alt="Logo" className="w-45 h-45"/>
-      </aside>
-      <nav>
-        <h6 className="footer-title text-lg font-semibold mb-2">Encuéntranos</h6>
-        <p className="text-sm sm:text-base">
-          Dirección: Calle 123 # 45-67<br />
-          Neiva, Huila<br />
-          Teléfono: 123-456-7890<br />
-          Email: flore@contacto.com
-        </p>
-      </nav>
-      <nav>
-        <h6 className="footer-title text-lg font-semibold mb-2">Navegación rápida</h6>
-        <ul className="space-y-1">
-          <li><a className="link link-hover text-base">Inicio</a></li>
-          <li><a className="link link-hover text-base">Nosotros</a></li>
-          <li><a className="link link-hover text-base">Menú</a></li>
-          <li><a className="link link-hover text-base">Reservas</a></li>
-          <li><a className="link link-hover text-base">Domicilios</a></li>
-        </ul>
-      </nav>
-      <nav>
-        <h6 className="footer-title text-lg font-semibold mb-2">Social</h6>
-        <div className="grid grid-flow-col gap-4">
-          <a aria-label="Twitter">
-            <svg
+          <img src={logoImg} alt="Logo" className="w-45 h-45" />
+        </aside>
+
+        <nav>
+          <h6 className="footer-title text-lg font-semibold mb-2">
+            {t('footer.findUs.title')}
+          </h6>
+          <p className="text-sm sm:text-base">
+            {t('footer.findUs.address')}<br />
+            {t('footer.findUs.city')}<br />
+            {t('footer.findUs.phone')}<br />
+            {t('footer.findUs.email')}
+          </p>
+        </nav>
+
+        <nav>
+          <h6 className="footer-title text-lg font-semibold mb-2">
+            {t('footer.quickLinks.title')}
+          </h6>
+          <ul className="space-y-1">
+            <li><a className="link link-hover text-base">{t('footer.quickLinks.home')}</a></li>
+            <li><a className="link link-hover text-base">{t('footer.quickLinks.us')}</a></li>
+            <li><a className="link link-hover text-base">{t('footer.quickLinks.menu')}</a></li>
+            <li><a className="link link-hover text-base">{t('footer.quickLinks.reservations')}</a></li>
+            <li><a className="link link-hover text-base">{t('footer.quickLinks.delivery')}</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h6 className="footer-title text-lg font-semibold mb-2">
+            {t('footer.social.title')}
+          </h6>
+          <div className="grid grid-flow-col gap-4">
+            <a aria-label="Twitter">
+              <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -58,9 +70,9 @@ const Footer = () => {
               className="fill-current">
               <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
             </svg>
-          </a>
-        </div>
-      </nav>
+            </a>
+          </div>
+        </nav>
       </div>
     </footer>
   );

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const useMenuData = () => {
   const [menuData, setMenuData] = useState([]);
+  const [featuredItems, setFeaturedItems] = useState([]);
 
   useEffect(() => {
     const fetchMenu = async () => {
@@ -21,7 +22,10 @@ const useMenuData = () => {
           items,
         }));
 
+        const featured = data.filter(item => item.label && item.label.trim() !== '');
+
         setMenuData(sections);
+        setFeaturedItems(featured);
       } catch (err) {
         console.error("Error al cargar el menú:", err);
       }
@@ -30,7 +34,7 @@ const useMenuData = () => {
     fetchMenu();
   }, []);
 
-  return menuData;
+  return { menuData, featuredItems };
 };
 
 export default useMenuData;
