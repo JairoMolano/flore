@@ -44,7 +44,7 @@ npm install
 ### 3. Instala los siguientes paquetes necesarios
 
 ```bash
-npm install embla-carousel-react embla-carousel-auto-scroll framer-motion i18next react-i18next i18next-http-backend i18next-browser-languagedetector
+npm install embla-carousel-react embla-carousel-auto-scroll framer-motion i18next react-i18next i18next-http-backend i18next-browser-languagedetector sweet-alert
 ```
 
 ### 4. Inicia el servidor de desarrollo
