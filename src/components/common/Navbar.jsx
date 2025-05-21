@@ -1,15 +1,23 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-
 import logoImg from '../../assets/img/common/logo.png';
-
 import useNavbarAnimation from '../../hooks/useNavbarAnimation'; 
+import { useCart } from '../../context/cartContext'; 
+import Cart from '../common/Cart';
+import { useCartUI } from '../../context/cartUIContext';
+
 
 const Navbar = () => {
   const showNavbar = useNavbarAnimation();
   const navRef = useRef(null);
   const { t } = useTranslation('common');
+  const { cartItems } = useCart(); //NUMERO DE PRODUCTOS
+
+  const { isCartOpen, openCart, closeCart } = useCartUI();
+
+
+
 
   useEffect(() => {
     if (navRef.current) {
@@ -25,24 +33,71 @@ const Navbar = () => {
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className='max-w-5xl mx-auto flex justify-between items-center w-full'>
+      <div className="max-w-5xl mx-auto flex justify-between items-center w-full">
+        {/* Logo */}
         <Link to="/">
           <img src={logoImg} alt="Logo" className="w-32 h-32" />
         </Link>
 
+        {/* Navigation Links */}
         <ul className="flex gap-6">
-          <li><Link className="navbar-text" to="/">{t('navbar.home')}</Link></li>
-          <li><Link className="navbar-text" to="/us">{t('navbar.us')}</Link></li>
-          <li><Link className="navbar-text" to="/menu">{t('navbar.menu')}</Link></li>
-          <li><Link className="navbar-text" to="/reservation">{t('navbar.reservation')}</Link></li>
-          <li><Link className="navbar-text" to="/delivery">{t('navbar.delivery')}</Link></li>
+          <li>
+            <Link className="navbar-text" to="/">
+              {t('navbar.home')}
+            </Link>
+          </li>
+          <li>
+            <Link className="navbar-text" to="/us">
+              {t('navbar.us')}
+            </Link>
+          </li>
+          <li>
+            <Link className="navbar-text" to="/menu">
+              {t('navbar.menu')}
+            </Link>
+          </li>
+          <li>
+            <Link className="navbar-text" to="/reservation">
+              {t('navbar.reservation')}
+            </Link>
+          </li>
+          <li>
+            <Link className="navbar-text" to="/delivery">
+              {t('navbar.delivery')}
+            </Link>
+          </li>
         </ul>
 
-        <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
-          <svg className="h-6 w-6 text-gray-600 hover:text-[#9C7696]" fill="currentColor" viewBox="0 0 32 32">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-          </svg>
-        </a>
+        {/* Cart */}
+        <div className="flex items-center gap-4">
+          <button
+            onClick={openCart}
+            className="relative cursor-pointer"
+            aria-label="Open cart"
+          >
+            <svg
+              className="h-6 w-6 text-gray-600 hover:text-[#9C7696]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 3h12.5M7 13V6h13"
+              />
+            </svg>
+            {cartItems.length > 0 && (
+              <span className="absolute -top-2 -right-2 bg-[#9C7696] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                {cartItems.length}
+              </span>
+            )}
+          </button>
+        </div>
+
+        {/* Cart Modal */}
+        <Cart isOpen={isCartOpen} onClose={closeCart} />
       </div>
     </nav>
   );

@@ -22,7 +22,7 @@
 }
 
 .hover-button-animation {
-    @apply transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-purple-500 hover:text-white;
+    @apply transform transition duration-300 hover:scale-105 hover:shadow-xl hover:bg-[#8a5c84] hover:text-white;
 }
 
 @keyframes kenburns {
@@ -37,5 +37,3 @@
 .kenburns {
   animation: kenburns 7s ease-in-out forwards;
 }
-
-

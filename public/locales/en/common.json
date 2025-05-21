@@ -106,13 +106,24 @@
     }
   },
   "reserveTable": {
-    "title": "Book your table!",
-    "description": "Reserve your table and let us pamper you in a warm and special atmosphere. We want to be part of your happiest moments, accompanying you with unique flavors and dedicated attention. We look forward to sharing an unforgettable experience together at Floré!",
-    "button": "Book"
+    "title": "Your tablem awaits",
+    "description": "Enjoy a unique experience. Book now and get ready for unforgettable moments.",
+    "button":"Reserve now",
+    "modal": {
+      "confirm":"Your reservation is ready!"
+    }
   },
-  "orderNow": {
+   "orderNow": {
     "title": "Delivery",
-    "description": "Place your orders easily and quickly through our platform. Just click the following link, select your favorite Floré dishes, and enjoy a delicious brunch in the comfort of your home. Safe and timely delivery guaranteed!",
-    "button": "Order Now"
+    "description": "Place your orders easily and quickly through our platform. Just click the button, fill out your details, and enjoy your brunch at home.",
+    "button": "Order Now",
+    "modal": {
+      "title": "Place Order",
+      "name": "Full name",
+      "address": "Delivery address",
+      "phone": "Contact number",
+      "details": "Order details",
+      "confirm": "Confirm Order"
+    }
   }
 }

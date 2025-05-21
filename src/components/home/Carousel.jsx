@@ -9,7 +9,6 @@ import slide3Img from '../../assets/img/home/carousel/slide_3.jpg';
 const Carousel = () => {
   const { t } = useTranslation('common');
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
 
   const slides = [
     {
@@ -36,17 +35,17 @@ const Carousel = () => {
   ];
 
   useEffect(() => {
-    if (!isHovered) {
-      const interval = setInterval(() => {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
-      }, 7000);
-      return () => clearInterval(interval);
-    }
-  }, [activeIndex, slides.length, isHovered]);
+  const interval = setInterval(() => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  }, 7000);
+
+  return () => clearInterval(interval);
+  }, [slides.length]);
+
 
   return (
     <div
-      className="relative w-full overflow-hidden"
+      className="relative w-full overflow-hidden z-0"
       style={{ height: `calc(100vh - var(--navbar-height))` }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
