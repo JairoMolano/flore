@@ -1,0 +1,130 @@
+{
+
+  "navbar": {
+    "home": "Inicio",
+    "us": "Nosotros",
+    "menu": "Menú",
+    "reservation": "Reservas",
+    "delivery": "Domicilios"
+  },
+
+  "carousel": {
+    "slide1": {
+      "title": "¿Listo para empezar tu día con un desayuno inolvidable?",
+      "description": "Floré, el desayuno especial.",
+      "button": "Sobre nosotros →"
+    },
+    "slide2": {
+      "title": "Un rincón acogedor donde la comida se convierte en magia",
+      "description": "Ven y disfruta de sabores únicos.",
+      "button": "Reserva tu mesa →"
+    },
+    "slide3": {
+      "title": "Delicias frescas, ambiente cálido y servicio de primera",
+      "description": "Ingredientes seleccionados con amor.",
+      "button": "Explora nuestro menú →"
+    }
+  },
+
+  "chooseUs": {
+    "title": "¿Por qué elegirnos?",
+    "cards": [
+      {
+        "title": "Ingredientes Frescos",
+        "description": "🌿 Calidad y frescura en cada plato"
+      },
+      {
+        "title": "Horarios Flexibles",
+        "description": "⏰ Brunch cuando quieras"
+      },
+      {
+        "title": "Combinaciones Únicas",
+        "description": "🍓 Sabores que no olvidarás"
+      }
+    ]
+  },
+
+  "outStanding": {
+    "title": "Menú destacado",
+    "description": "Te invitamos a descubrir un menú que celebra la frescura, la creatividad y el sabor."
+  },
+
+  "findUs": {
+    "title": "Encuéntranos en Neiva",
+    "description": "Te invitamos a conocer Floré el destino predilecto para los amantes del brunch en Neiva. Nuestras puertas están abiertas para recibirte y crear juntos momentos inolvidables mientras disfrutas de nuestra distinguida propuesta culinaria."
+  },
+
+  "footer": {
+    "findUs": {
+      "title": "Encuéntranos",
+      "address": "Dirección: Calle 123 # 45-67",
+      "city": "Neiva, Huila",
+      "phone": "Teléfono: 123-456-7890",
+      "email": "Email: flore@contacto.com"
+    },
+    "quickLinks": {
+      "title": "Navegación rápida",
+      "home": "Inicio",
+      "us": "Nosotros",
+      "menu": "Menú",
+      "reservations": "Reservas",
+      "delivery": "Domicilios"
+    },
+    "social": {
+      "title": "Social"
+    }
+  },
+
+  "usHeaderDescription": {
+    "description": "Un rincón de sabor y calidez en el corazón de Neiva"
+  },
+
+  "reservationHeaderDescription": {
+    "description": "Reserva tu lugar en la casa del sabor"
+  },
+
+  "deliveryHeaderDescription": {
+    "description": "¡Haz tu pedido y recibe Floré en casa!"
+  },
+
+  "ourHistory": {
+    "title": "Nuestra historia",
+    "description": "Floré nació de una conversación entre amigas, de esas que empiezan con un café y terminan con una gran idea: crear un lugar donde el brunch no sea solo una comida, sino una experiencia. Inspiradas por la frescura de los ingredientes locales y el amor por la gastronomía, decidimos abrir un espacio que mezclara lo mejor del desayuno y el almuerzo, con ese toque dulce y salado que tanto nos gusta.\nEn el corazón de Neiva, abrimos las puertas de este rincón que hoy muchos llaman su lugar favorito para empezar el día con sabor, alegría y calidez."
+  },
+  
+  "aboutUs": {
+    "mission": {
+      "title": "Misión",
+      "description": "Brindar una experiencia gastronómica única a través de brunchs creativos, frescos y personalizados, en un ambiente acogedor tanto en el local como a domicilio."
+    },
+    "vision": {
+      "title": "Visión",
+      "description": "Ser el brunch de referencia en la región, expandiendo nuestro concepto de sabor, cercanía y bienestar a más rincones del país a través de innovación, calidad y servicio."
+    },
+    "values": {
+      "title": "Nuestros valores",
+      "description": "Pasión por la cocina - Cada plato está hecho con dedicación y amor.\nCalidad y frescura - Usamos ingredientes locales y naturales.\nCercanía con el cliente - Queremos que te sientas como en casa.\nAutenticidad - No seguimos modas, creamos experiencias únicas.\nInnovación - Apostamos por lo nuevo sin perder nuestra esencia."
+    }
+  },
+  "reserveTable": {
+  "title": "¡Tu mesa te espera!",
+  "description": "Disfruta una experencia única. Reserva ahora y prepárate para momentos inolvidables",
+  "button": "Reservar ahora",
+  "modal": {
+    "confirm": "Confirmar tu reserva"
+  }
+  },
+  "orderNow": {
+  "title": "Domicilios",
+  "description": "Realiza tus pedidos de forma fácil y rápida a través de nuestra plataforma. Solo haz clic en el botón, completa tus datos y disfruta de tu brunch en casa.",
+  "button": "Ordenar Ahora",
+  "modal": {
+    "title": "Realizar Pedido",
+    "name": "Nombre completo",
+    "address": "Dirección de entrega",
+    "phone": "Número de contacto",
+    "details": "Detalles del pedido",
+    "confirm": "Confirmar Pedido"
+  }
+}
+}
